@@ -1,0 +1,23 @@
+[project]
+name = "prompt-engineering-lab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rivka-343", email = "rivka747343@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "gradio>=6.31.0",
+    "pandas>=3.1.1",
+    "pytest>=9.2.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+prompt-engineering-lab = "prompt_engineering_lab:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
